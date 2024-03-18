@@ -36,8 +36,9 @@
   <a href="https://tryhackme.com/p/yigitbne2">
   <img src="https://img.shields.io/static/v1?message=TryHackMe&logo=tryhackme&label=&color=88cc14&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="tryhackme"  />
   </a>
-  <a href="mailto:emir.YT@yahoo.com">
-    <img src="https://img.shields.io/static/v1?message=Outlook&logo=microsoft-outlook&label=&color=0078D4&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="mail" />
+<a href="mailto:emir.YT@yahoo.com">
+  <img src="https://img.shields.io/static/v1?message=Outlook&logo=microsoft-outlook&label=&color=0078D4&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="mail" />
 </a>
+
 
 </div>
