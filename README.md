@@ -24,7 +24,7 @@
 <p align="left">Sistem yönetimi alanındaki başarımı ve başarılarımı ayrıntılı olarak tartışmak için bir görüşme düzenlemekten memnuniyet duyarım. Şirketinizin IT altyapısını daha iyi bir hale getirmenize yardımcı olmak için elimden gelenin en iyisini yapacağıma inanıyorum.</p>
 
 <p align="left">Saygılarımla,</p>
-<h4 align="center">Emir Yıgıt</h4>
+<h4 align="center">Emir Yiğit</h4>
 
 ---
 
