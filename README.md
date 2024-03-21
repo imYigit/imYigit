@@ -1,8 +1,4 @@
-Elbette, aşağıda güzel bir GitHub README dosyası oluşturulmuş hâli bulunmaktadır:
-
----
-
-<h1 align="center">Merhaba, Ben Emir Yıgıt 👋</h1>
+<h1 align="center">Merhaba, Ben Emir Yiğit 👋</h1>
 <h3 align="center">Sistem Yöneticisi | Siber Güvenlik Uzmanı</h3>
 
 <p align="center">
