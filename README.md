@@ -23,15 +23,7 @@
 
 ### 📬 Bana Ulaşın
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/emiryigit/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Profilim-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="mailto:emir@triorem.com">
-    <img src="https://img.shields.io/badge/E&nbsp;-&nbsp;Mail-emir@triorem.com-8A2BE2?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email">
-  </a>
-  <a href="https://triorem.com" target="_blank">
-    <img src="https://img.shields.io/badge/Web-Triorem.com-000000?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Triorem Web">
-  </a>
-</p>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Emir%20Yiğit-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emiryigit/)
+[![E-mail](https://img.shields.io/badge/E--Mail-emir@triorem.com-8A2BE2?style=flat-square&logo=microsoft-outlook&logoColor=white)](mailto:emir@triorem.com)
+[![Web](https://img.shields.io/badge/Triorem.com-Ziyaret%20Et-000000?style=flat-square&logo=google-chrome&logoColor=white)](https://triorem.com)
 <!-- ----------  /END  ---------- -->
