@@ -23,13 +23,6 @@
 
 ### 📫 Bana ulaşın
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emiryigit/)
-[![E-mail](https://img.shields.io/badge/E&nbsp;- Mail-8A2BE2?logo=microsoft-outlook&logoColor=white&labelColor=8A2BE2)](mailto:emir.YT@yahoo.com)
-
-<details>
-<summary>GitHub istatistiklerim (için tıklayın)</summary><br>
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=imYigit&show_icons=true&theme=default&hide_border=true)
-
-</details>
+[![E-mail](https://img.shields.io/badge/E&nbsp;- Mail-8A2BE2?logo=microsoft-outlook&logoColor=white&labelColor=8A2BE2)](mailto:emir@triorem.com)
 
 <!-- ----------  /END  ---------- -->
