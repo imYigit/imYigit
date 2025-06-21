@@ -23,6 +23,5 @@
 
 ### 📫 Bana ulaşın
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emiryigit/)
-[![E-mail](https://img.shields.io/badge/E&nbsp;- Mail-8A2BE2?logo=microsoft-outlook&logoColor=white&labelColor=8A2BE2)](mailto:emir@triorem.com)
-
+[![E-mail](https://img.shields.io/badge/E-mail-8A2BE2?logo=microsoft-outlook&logoColor=white&labelColor=8A2BE2)](mailto:emir@triorem.com)
 <!-- ----------  /END  ---------- -->
