@@ -13,7 +13,7 @@
 ---
 
 ### 🚀 Hakkımda _kısaca_
-- 10+ yıllık deneyimle kurumsal **sistem yönetimi** süreçlerini planlıyor ve işletiyorum.  
+- 3+ yıllık deneyimle kurumsal **sistem yönetimi** süreçlerini planlıyor ve işletiyorum.  
 - **Uygulama yazılım desteği** ile konfigürasyon, güncelleme ve performans optimizasyonu sağlıyorum.  
 - **IT danışmanlık** hizmetleriyle dijital dönüşüm stratejileri ve altyapı planlaması sunuyorum.
 
