@@ -13,7 +13,7 @@
 ---
 
 ### 🚀 Hakkımda _kısaca_
-- 10 yılı aşkın süredir **güvenli, yüksek erişilebilirlikli** IT altyapıları tasarlıyor ve işletiyorum.  
+- 3 yılı aşkın süredir **güvenli, yüksek erişilebilirlikli** IT altyapıları tasarlıyor ve işletiyorum.  
 - SOC/ISO 27001 süreçlerinden **ölçeklenebilir Linux ekosistemlerine** kadar geniş bir teknik yelpazede çalıştım.  
 - Güncel odak: **sıfır-gün tespiti** ve **otomasyonla siber dayanıklılık**.
 
