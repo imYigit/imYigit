@@ -13,13 +13,13 @@
 ---
 
 ### 🚀 Hakkımda _kısaca_
-- 3 yılı aşkın süredir **güvenli, yüksek erişilebilirlikli** IT altyapıları tasarlıyor ve işletiyorum.  
-- SOC/ISO 27001 süreçlerinden **ölçeklenebilir Linux ekosistemlerine** kadar geniş bir teknik yelpazede çalıştım.  
-- Güncel odak: **sıfır-gün tespiti** ve **otomasyonla siber dayanıklılık**.
+- 10+ yıllık deneyimle kurumsal **sistem yönetimi** süreçlerini planlıyor ve işletiyorum.  
+- **Uygulama yazılım desteği** ile konfigürasyon, güncelleme ve performans optimizasyonu sağlıyorum.  
+- **IT danışmanlık** hizmetleriyle dijital dönüşüm stratejileri ve altyapı planlaması sunuyorum.
 
-### 🏢 Triorem’da Ne Yapıyoruz?
-> Kritik sistemlerinizin **kesintisiz, güvenli ve yönetilebilir** kalmasını sağlayan uçtan uca çözümler.  
-> – Altyapı tasarımı, 7×24 yönetim, olay müdahalesi ve stratejik danışmanlık.
+### 💼 Triorem’da Ne Yapıyoruz?
+> Microsoft ve Linux sunucu çözümlerinden açık kaynak entegrasyonlarına, yerinde ofis desteğinden özelleştirilmiş sistem mimarilerine kadar geniş bir yelpazede hizmet sunar.  
+> İhtiyaç odaklı yaklaşımımızla, işletmelerin dijital altyapısını güvenli, esnek ve sürdürülebilir hale getiriyoruz.
 
 ### 📫 Bana ulaşın
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emiryigit/)
