@@ -7,7 +7,7 @@
 <h1 align="center">Emir Yiğit</h1>
 <p align="center">
   Kurucu & Teknoloji Lideri · <a href="https://triorem.com">Triorem</a><br>
-  <em>Sistem Yönetimi · Siber Güvenlik · Bulut Altyapıları</em>
+  <em>Sistem Yönetimi · Yazılım & Uygulama Desteği · IT Danışmanlık</em>
 </p>
 
 ---
