@@ -1,7 +1,7 @@
 <!-- ----------  G I T H U B  P R O F I L E  ---------- -->
 
 <p align="center">
-  <img src="https://triorem.com/assets/logo.svg" width="120" alt="Triorem logo">
+  <img src="https://triorem.com/assets/logo/favicon.svg" width="120" alt="Triorem logo">
 </p>
 
 <h1 align="center">Emir Yiğit</h1>
