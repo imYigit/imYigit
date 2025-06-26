@@ -1,99 +1,102 @@
+# Compliance Search ile E-posta Silme Rehberi
+
 **Başlamadan Önce:**
 
-Compliance Search ve e-posta silme işlemi için yeterli yetkilere sahip olduğunuzdan emin olun. Genellikle, **eDiscovery Manager** veya **Compliance Management** gibi uygun gruplarda olmanız gerekmektedir.
+Compliance Search ve e-posta silme işlemleri için yeterli yetkilere sahip olduğunuzdan emin olun. Genellikle **eDiscovery Manager** veya **Compliance Management** gibi uygun rol gruplarında yer almanız gerekir.
 
 ---
 
-### **1. Arama Nesnesini Kontrol Et ve Mevcut Nesneleri Görüntüle**
+## 🔍 1. Mevcut Arama Nesnelerini Görüntüle
 
-Önce mevcut Compliance Search nesnelerini görüntüleyin ve silme işlemi için uygun olanı bulup bulmadığınızı kontrol edin.
+Öncelikle mevcut Compliance Search nesnelerini görüntüleyerek silme işlemi için uygun olanın var olup olmadığını kontrol edin:
 
 ```powershell
 Get-ComplianceSearch
-```
+````
 
-Eğer spesifik bir arama nesnesi (örneğin, "Remove Phishing Message6") hakkında bilgi almak istiyorsanız:
+Belirli bir arama nesnesi hakkında detaylı bilgi almak için:
 
 ```powershell
-Get-ComplianceSearch | Where-Object { $_.Name -eq "Remove Phishing Message6" }
+Get-ComplianceSearch | Where-Object { $_.Name -eq "RemovePhishingMessage6" }
 ```
 
 ---
 
-### **2. Yeni Bir Compliance Search Nesnesi Oluştur**
+## ✏️ 2. Yeni Bir Compliance Search Nesnesi Oluştur
 
-Eğer aradığınız nesne mevcut değilse, yeni bir arama nesnesi oluşturun. Bu nesne, silmek istediğiniz e-postaları hedefleyecek bir içerik sorgusu içerir. Örneğin, "phishing" anahtar kelimesini içeren e-postaları bulmak için:
+Eğer uygun bir arama nesnesi yoksa, yeni bir arama tanımlayın. Örneğin, konu satırında belirli bir metni içeren e-postaları aramak için:
 
 ```powershell
-New-ComplianceSearch -Name "Spam Delete2" -ExchangeLocation all -ContentMatchQuery "subject:'Bekleyen mesajları hemen düzeltin!' AND Received:today"
-
+New-ComplianceSearch -Name "PhishingDeleteSearch" -ExchangeLocation all -ContentMatchQuery "subject:'Bekleyen mesajları hemen düzeltin!' AND Received:today"
 ```
 
-- **Name**: Arama nesnesinin adı.
-- **ExchangeLocation**: Tüm posta kutularını aramak için "all" kullanılır.
-- **ContentMatchQuery**: Aranacak içerik sorgusu (örneğin, e-postanın konusu).
+**Parametreler:**
+
+* `-Name`: Arama nesnesinin adı
+* `-ExchangeLocation all`: Tüm posta kutularında arama yapılmasını sağlar
+* `-ContentMatchQuery`: Aranacak içerik sorgusu
 
 ---
 
-### **3. Compliance Search İşlemini Başlat**
+## ▶️ 3. Compliance Search İşlemini Başlat
 
-Compliance Search nesnesini başlatın ve içeriği aramaya başlayın:
+Tanımladığınız arama nesnesini başlatmak için:
 
 ```powershell
-Start-ComplianceSearch -Identity "Spam Delete2"
-
+Start-ComplianceSearch -Identity "PhishingDeleteSearch"
 ```
 
-> Not: Arama işleminin tamamlanmasını bekleyin. Bu süreç, arama kriterlerinin karmaşıklığına ve posta kutusu sayısına bağlı olarak zaman alabilir.
-> 
+> 🔄 **Not:** Arama işleminin tamamlanması birkaç dakika sürebilir. Bu süre sorgu kapsamına göre değişkenlik gösterebilir.
 
 ---
 
-### **4. Aramanın Durumunu Kontrol Et**
+## 📈 4. Arama Durumunu Kontrol Et
 
-Arama işleminin tamamlanıp tamamlanmadığını kontrol edin:
+Aramanın tamamlanıp tamamlanmadığını kontrol edin:
 
 ```powershell
-Get-ComplianceSearch -Identity "Spam Delete2"
-
+Get-ComplianceSearch -Identity "PhishingDeleteSearch"
 ```
 
-Eğer işlem tamamlanmışsa, **Status** alanında **Completed** yazmalıdır.
+**Status** değeri `Completed` olmalıdır.
 
 ---
 
-### **5. Arama Sonucuna Göre E-posta Silme İşlemini Başlat**
+## 🧹 5. E-postaları Silme (Purge) İşlemini Başlat
 
-Arama işlemi tamamlandıktan sonra, belirtilen e-postaları silmek için eylemi başlatabilirsiniz. Silme işlemi için şu komutu kullanın:
+Arama tamamlandıktan sonra e-postaları silmek için:
 
 ```powershell
-New-ComplianceSearchAction -SearchName "Spam Delete2" -Purge -PurgeType SoftDelete
-
+New-ComplianceSearchAction -SearchName "PhishingDeleteSearch" -Purge -PurgeType SoftDelete
 ```
 
-- **SearchName**: Daha önce oluşturduğunuz Compliance Search nesnesinin adı.
-- **Purge**: E-postaları silmek için bu parametre kullanılır.
-- **PurgeType**: Silme türü; "SoftDelete" kullanırsanız, e-postalar kurtarılabilir olarak işaretlenir.
+**Parametreler:**
 
-> Dikkat: Bu işlem geri alınamaz bir etkiye sahip olabilir. Silme işlemi başlatılmadan önce arama kriterlerinin doğru olduğundan emin olun.
-> 
+* `-SearchName`: Daha önce oluşturduğunuz arama nesnesi
+* `-Purge`: Silme işlemini başlatır
+* `-PurgeType`:
+
+  * `SoftDelete`: Geri alınabilir şekilde siler
+  * `HardDelete`: Kalıcı olarak siler (geri alınamaz)
+
+> ⚠️ **Uyarı:** Silme işlemi geri alınamaz etkilere neden olabilir. Komutu uygulamadan önce filtreleme kriterlerinin doğru olduğundan emin olun.
 
 ---
 
-### **6. Eylemin Durumunu Kontrol Et**
+## 📊 6. Silme Eyleminin Durumunu Kontrol Et
 
-Silme işleminin tamamlanıp tamamlanmadığını kontrol etmek için:
+Silme işleminin tamamlanma durumunu görmek için:
 
 ```powershell
 Get-ComplianceSearchAction
-
 ```
 
-İşlem **Completed** duruma geçtiğinde e-postalar başarıyla silinmiştir.
+Durum `Completed` olduğunda işlem başarıyla tamamlanmıştır.
 
 ---
 
-### **Notlar:**
+## 📝 Notlar
 
-- **SoftDelete**: Bu silme türü ile e-postalar kurtarılabilir durumdadır ve kullanıcılar veya yöneticiler tarafından belirli bir süre içinde geri alınabilir.
-- **HardDelete**: E-postaların tamamen silinmesini istiyorsanız, **PurgeType** parametresini **HardDelete** olarak ayarlayabilirsiniz. Ancak bu işlem kalıcıdır ve geri alınamaz.
+* `SoftDelete`: E-postalar geri alınabilir olarak silinir (kurtarılabilir öğeler klasörüne gider).
+* `HardDelete`: E-postalar tamamen silinir ve geri getirilemez.
+* Compliance Search işlemlerinde yetki eksikliği, ExchangeLocation hataları veya gecikmeler yaşanabilir — yönetici izninizin olduğundan emin olun.
