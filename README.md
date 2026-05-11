@@ -21,6 +21,16 @@
 > Microsoft ve Linux sunucu çözümlerinden açık kaynak entegrasyonlarına, yerinde ofis desteğinden özelleştirilmiş sistem mimarilerine kadar geniş bir yelpazede hizmet sunar.  
 > İhtiyaç odaklı yaklaşımımızla, işletmelerin dijital altyapısını güvenli, esnek ve sürdürülebilir hale getiriyoruz.
 
+### 🗒️ Notlar
+
+Windows Server ortamlarına yönelik pratik komut ve yapılandırma rehberleri:
+
+| Konu | İçerik |
+|------|--------|
+| [Dosya Sunucusu](sudo-nots/dosya-sunucusu/) | NTFS izinleri (`icacls`), SMB oturum yönetimi |
+| [GPO](sudo-nots/gpo/) | BGInfo dağıtımı, ağ sürücüsü haritalama, VS Code extension kurulumu |
+| [Exchange Server](sudo-nots/exchange-server/) | Compliance Search ile e-posta yönetimi |
+
 ### 📬 Bana Ulaşın
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Emir%20Yiğit-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emiryigit/)
